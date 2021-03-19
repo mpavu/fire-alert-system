@@ -1,0 +1,157 @@
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                    03/12/2021  17:39:33  PAGE 1
+
+
+BL51 BANKED LINKER/LOCATER V6.22.2.0, INVOKED BY:
+C:\KEIL_V5\C51\BIN\BL51.EXE .\Objects\fire-alarm-system.obj TO .\Objects\fire-alarm-system PRINT (.\Listings\fire-alarm-
+>> system.m51)
+
+
+MEMORY MODEL: SMALL
+
+
+INPUT MODULES INCLUDED:
+  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+  C:\KEIL_V5\C51\LIB\C51S.LIB (?C_STARTUP)
+
+
+LINK MAP OF MODULE:  .\Objects\fire-alarm-system (FIRE_ALARM_SYSTEM)
+
+
+            TYPE    BASE      LENGTH    RELOCATION   SEGMENT NAME
+            -----------------------------------------------------
+
+            * * * * * * *   D A T A   M E M O R Y   * * * * * * *
+            REG     0000H     0008H     ABSOLUTE     "REG BANK 0"
+            IDATA   0008H     0001H     UNIT         ?STACK
+
+            * * * * * * *   C O D E   M E M O R Y   * * * * * * *
+            CODE    0000H     0003H     ABSOLUTE     
+                    0003H     07FDH                  *** GAP ***
+            CODE    0800H     0036H     UNIT         ?PR?MAIN?FIRE_ALARM_SYSTEM
+            CODE    0836H     002BH     UNIT         ?CO?FIRE_ALARM_SYSTEM
+            CODE    0861H     000CH     UNIT         ?C_C51STARTUP
+
+
+
+OVERLAY MAP OF MODULE:   .\Objects\fire-alarm-system (FIRE_ALARM_SYSTEM)
+
+
+SEGMENT
+  +--> CALLED SEGMENT
+---------------------
+?C_C51STARTUP
+  +--> ?PR?MAIN?FIRE_ALARM_SYSTEM
+
+?PR?MAIN?FIRE_ALARM_SYSTEM
+  +--> ?CO?FIRE_ALARM_SYSTEM
+
+
+
+UNRESOLVED EXTERNAL SYMBOLS:
+   DELAY
+   LCDINIT
+   _LCDCMD
+   _LCDDIS
+
+
+
+SYMBOL TABLE OF MODULE:  .\Objects\fire-alarm-system (FIRE_ALARM_SYSTEM)
+
+  VALUE           TYPE          NAME
+  ----------------------------------
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  03/12/2021  17:39:33  PAGE 2
+
+
+
+  -------         MODULE        FIRE_ALARM_SYSTEM
+  C:0000H         SYMBOL        _ICE_DUMMY_
+  D:0090H         PUBLIC        P1
+  D:00B0H         PUBLIC        P3
+  B:0090H.0       PUBLIC        sensor
+  B:00B0H.0       PUBLIC        buzzer
+  C:0800H         PUBLIC        main
+  -------         PROC          MAIN
+  -------         DO            
+  C:0804H         SYMBOL        back
+  -------         ENDDO         
+  C:0800H         LINE#         11
+  C:0800H         LINE#         12
+  C:0800H         LINE#         13
+  C:0802H         LINE#         14
+  C:0804H         LINE#         15
+  C:0807H         LINE#         16
+  C:0810H         LINE#         17
+  C:0815H         LINE#         18
+  C:081EH         LINE#         19
+  C:0821H         LINE#         20
+  C:0821H         LINE#         21
+  C:0821H         LINE#         22
+  C:0824H         LINE#         23
+  C:0824H         LINE#         24
+  C:0829H         LINE#         25
+  C:0832H         LINE#         26
+  C:0834H         LINE#         27
+  C:0834H         LINE#         28
+  -------         ENDPROC       MAIN
+  -------         ENDMOD        FIRE_ALARM_SYSTEM
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  DELAY
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCDCMD
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  LCDINIT
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+
+*** WARNING L1: UNRESOLVED EXTERNAL SYMBOL
+    SYMBOL:  _LCDDIS
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  LCDINIT
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+    ADDRESS: 0805H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCDDIS
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+BL51 BANKED LINKER/LOCATER V6.22.2.0                                                  03/12/2021  17:39:33  PAGE 3
+
+
+    ADDRESS: 080EH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCDCMD
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+    ADDRESS: 0813H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCDDIS
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+    ADDRESS: 081CH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  DELAY
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+    ADDRESS: 081FH
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCDCMD
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+    ADDRESS: 0827H
+
+*** WARNING L2: REFERENCE MADE TO UNRESOLVED EXTERNAL
+    SYMBOL:  _LCDDIS
+    MODULE:  .\Objects\fire-alarm-system.obj (FIRE_ALARM_SYSTEM)
+    ADDRESS: 0830H
+
+******************************************************************************
+* RESTRICTED VERSION WITH 0800H BYTE CODE SIZE LIMIT; USED: 0061H BYTE ( 4%) *
+******************************************************************************
+
+Program Size: data=9.0 xdata=0 code=112
+LINK/LOCATE RUN COMPLETE.  11 WARNING(S),  0 ERROR(S)

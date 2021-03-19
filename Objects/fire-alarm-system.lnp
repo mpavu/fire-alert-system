@@ -1,0 +1,3 @@
+".\Objects\fire-alarm-system.obj" 
+TO ".\Objects\fire-alarm-system" 
+PRINT(".\Listings\fire-alarm-system.m51")

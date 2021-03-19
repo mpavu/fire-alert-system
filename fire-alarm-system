@@ -1,0 +1,30 @@
+#include<reg51.h>
+sbit sensor=P1^0;
+sbit rs=P1^1;
+sbit rw=P1^2;
+sbit en=P1^3;
+sbit buzzer=P3^0;
+void lcddat(unsigned char);
+void lcdcmd(unsigned char);
+void lcddis(unsigned char *);
+void delay();
+void main()
+{
+buzzer=0;
+sensor=0;
+back:lcdinit();
+lcddis("  FIRE ALERT  ");
+lcdcmd(0xc0);
+lcddis("    SYSTEM    ");
+delay();
+while(1)
+{
+if(sensor1==1)
+  {
+  lcdcmd(0x01);
+  lcddid("FIRE OCCURED")
+  buzzer=1;
+  }
+  goto back;
+}  
+}
